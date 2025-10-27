@@ -1,0 +1,1478 @@
+<!-- HTMLファイル全体にTailwind CSSを適用し、日本の秋のドライブ旅行のしおりを作成します。 -->
+<!-- フォントはInterと日本語フォントを使用し、レスポンシブデザインに対応させます。 -->
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- タイトルを統一します -->
+    <title>那須高原と日光・鬼怒川・宇都宮を満喫する 秋の紅葉旅</title>
+    <!-- Tailwind CSS CDN 読み込み -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* 日本語フォント対応 */
+      body {
+        font-family: "Inter", "Noto Sans JP", "Hiragino Kaku Gothic ProN",
+          Meiryo, sans-serif;
+        background-color: #f8f5f2; /* 薄いベージュ系の背景 */
+      }
+      /* 紅葉をイメージしたカスタムカラースキーム */
+      .color-accent {
+        background-color: #d9534f;
+      } /* 深い赤/マルーン */
+      .text-accent {
+        color: #d9534f;
+      }
+      .border-accent {
+        border-color: #d9534f;
+      }
+      .schedule-card {
+        transition: transform 0.3s ease;
+      }
+      .schedule-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
+      }
+      .time-badge {
+        background-color: #fffaf0; /* アイボリー */
+        border-left: 4px solid #d9534f;
+      }
+      .section-header {
+        border-bottom: 3px solid #d9534f;
+        display: inline-block;
+        padding-bottom: 2px;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen p-4 md:p-8">
+    <!-- メインコンテナ -->
+    <div
+      class="max-w-6xl mx-auto bg-white rounded-xl shadow-2xl overflow-hidden"
+    >
+      <!-- ヒーローセクション/タイトル -->
+      <header
+        class="color-accent text-white p-6 md:p-10 text-center rounded-t-xl"
+      >
+        <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight">
+          🍁 那須塩原・日光・鬼怒川・宇都宮を満喫する 秋の紅葉旅 in 栃木 🚗
+        </h1>
+        <p class="mt-2 text-lg md:text-xl font-medium">
+          2025年10月28日（火）〜 30日（木） | 紅葉見頃の3日間
+        </p>
+      </header>
+
+      <!-- イントロダクション -->
+      <section class="p-6 md:p-10 bg-gray-50 border-b border-gray-200">
+        <h2
+          class="text-xl md:text-2xl font-bold text-gray-800 mb-4 section-header"
+        >
+          旅のコンセプト
+        </h2>
+        <p class="text-gray-600 leading-relaxed">
+          紅葉見頃の那須高原と日光・鬼怒川を巡る3日間の旅行プランです。那須高原の雄大な自然と日光の世界遺産を効率的に巡るルートです。
+        </p>
+      </section>
+
+      <!-- 日ごとのスケジュール -->
+      <main class="p-6 md:p-10">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-8">
+          🗓️ 日ごとのスケジュール（詳細）
+        </h2>
+
+        <!-- 1日目 -->
+        <div
+          class="schedule-card p-6 mb-8 rounded-lg border-2 border-accent/20 bg-white shadow-lg"
+        >
+          <h3
+            class="text-2xl font-extrabold text-accent mb-4 flex items-center"
+          >
+            <span class="mr-3 text-3xl">1日目</span
+            ><span class="text-xl">（10/28・火）| 那須高原の自然とグルメ</span>
+          </h3>
+          <div class="space-y-4 text-gray-700">
+            <div class="time-badge p-3 rounded-md">
+              <span class="font-semibold text-gray-900 block md:inline"
+                >08:20</span
+              >
+              羽田着・レンタカー借り出し（9:30出発）。<span class="font-medium"
+                >東北道〜那須方面へ（約2.5h / 198km）</span
+              >。
+            </div>
+            <div class="time-badge p-3 rounded-md">
+              <span class="font-semibold text-gray-900 block md:inline"
+                >12:00頃</span
+              >
+              那須到着。<a
+                href="https://cheesegarden.jp/"
+                target="_blank"
+                class="text-blue-600 hover:underline"
+                >【チーズガーデン那須本店】</a
+              >か<a
+                href="https://meijinomori.jp/"
+                target="_blank"
+                class="text-blue-600 hover:underline"
+                >【明治の森】</a
+              >で昼食。
+            </div>
+            <div class="time-badge p-3 rounded-md">
+              <span class="font-semibold text-gray-900 block md:inline"
+                >午後</span
+              >
+              <a
+                href="https://www.nasu-ropeway.jp/"
+                target="_blank"
+                class="text-blue-600 hover:underline"
+                >【那須ロープウェイ】</a
+              >
+              で茶臼岳へ（4分）。眼下に関東平野を望む。<a
+                href="https://www.nasu-ropeway.jp/enjoy/11"
+                target="_blank"
+                class="text-blue-600 hover:underline"
+                >「つつじ吊り橋」</a
+              >で渓谷散策。
+            </div>
+            <div class="time-badge p-3 rounded-md">
+              <span class="font-semibold text-gray-900 block md:inline"
+                >その後</span
+              >
+              <a
+                href="https://www.tochigiji.or.jp/spot/s11654"
+                target="_blank"
+                class="text-blue-600 hover:underline"
+                >【那須高原展望台】</a
+              >へ移動（車5分）。快晴時は八溝山系まで望む大パノラマ。時間があれば他のところにも行く。。
+            </div>
+            <div class="time-badge p-3 rounded-md">
+              <span class="font-semibold text-gray-900 block md:inline"
+                >18:00頃</span
+              >ホテル<a
+                href="https://www.nasu-ropeway.jp/"
+                target="_blank"
+                class="text-blue-600 hover:underline"
+                >【フォートリート+那須高原】</a
+              >
+              チェックイン・夕食・入浴。
+            </div>
+          </div>
+        </div>
+
+        <!-- 2日目 -->
+        <div
+          class="schedule-card p-6 mb-8 rounded-lg border-2 border-accent/20 bg-white shadow-lg"
+        >
+          <h3
+            class="text-2xl font-extrabold text-accent mb-4 flex items-center"
+          >
+            <span class="mr-3 text-3xl">2日目</span
+            ><span class="text-xl"
+              >（10/29・水）| 中禅寺湖の紅葉と鬼怒川温泉</span
+            >
+          </h3>
+          <div class="space-y-4 text-gray-700">
+            <div class="time-badge p-3 rounded-md">
+              <span class="font-semibold text-gray-900 block md:inline"
+                >06:30</span
+              >
+              ホテル発。<span class="font-medium">日塩もみじライン（無料）</span
+              >へ（約1h / 30km）。<a
+                href="https://www.city.nasushiobara.tochigi.jp/soshikikarasagasu/tsuishin/sio/kankoshisetsu/2263.html"
+                target="_blank"
+                class="text-blue-600 hover:underline"
+                >もみじ谷大吊橋</a
+              >や<a
+                href="https://www.tochigiji.or.jp/spot/s57711"
+                target="_blank"
+                class="text-blue-600 hover:underline"
+                >紅の吊橋</a
+              >や<a
+                href="https://www.nikko-kankou.org/spot/42"
+                target="_blank"
+                class="text-blue-600 hover:underline"
+                >龍王峡</a
+              >など紅葉を楽しみながらドライブ。
+            </div>
+            <div class="time-badge p-3 rounded-md">
+              <span class="font-semibold text-gray-900 block md:inline"
+                >午前</span
+              >
+              いろは坂を登り、<a
+                href="https://www.nikko-kotsu.co.jp/ropeway/"
+                target="_blank"
+                class="text-blue-600 hover:underline"
+                >明智平ロープウェイ</a
+              >で展望台へ（3分）。日光一の展望から中禅寺湖・華厳の滝・男体山を望む。
+              <a
+                href="https://www.kegon.jp/"
+                target="_blank"
+                class="text-blue-600 hover:underline"
+                >華厳の滝</a
+              >を見てエレベーターで降りる。
+            </div>
+            <div class="time-badge p-3 rounded-md">
+              <span class="font-semibold text-gray-900 block md:inline"
+                >昼</span
+              >
+              中禅寺湖畔<a
+                href="https://www.nikko-nsm.co.jp/british.html"
+                target="_blank"
+                class="text-blue-600 hover:underline"
+                >英国大使館別荘記念公園</a
+              >や<a
+                href="https://www.nikko-nsm.co.jp/italy.html"
+                target="_blank"
+                class="text-blue-600 hover:underline"
+                >イタリア大使館別荘記念公園</a
+              >で軽食（優雅な湖畔景色）。その後<a
+                href="https://www.tochigiji.or.jp/spot/s12028"
+                target="_blank"
+                class="text-blue-600 hover:underline"
+                >半月山展望台</a
+              >へ。
+            </div>
+            <div class="time-badge p-3 rounded-md">
+              <span class="font-semibold text-gray-900 block md:inline"
+                >午後</span
+              >
+              <a
+                href="https://www.visit-tochigi.com/plan-your-trip/things-to-do/2250/"
+                target="_blank"
+                class="text-blue-600 hover:underline"
+                >中禅寺湖遊覧船</a
+              >（55分クルーズ）で湖上の紅葉を観賞。その後、<a
+                href="https://www.tochigiji.or.jp/spot/s5964"
+                target="_blank"
+                class="text-blue-600 hover:underline"
+                >竜頭の滝</a
+              >を散策。時間があれば、ほかも散策。
+            </div>
+            <div class="time-badge p-3 rounded-md">
+              <span class="font-semibold text-gray-900 block md:inline"
+                >17:00頃</span
+              >
+              鬼怒川温泉へ移動（約30分）。
+            </div>
+            <div class="time-badge p-3 rounded-md">
+              <span class="font-semibold text-gray-900 block md:inline"
+                >18:00頃</span
+              >ホテル<a
+                href="https://www.sunshine-kinugawa.co.jp/"
+                target="_blank"
+                class="text-blue-600 hover:underline"
+                >【サンシャイン鬼怒川】</a
+              >チェックイン。温泉入浴・バイキング夕食。<a
+                href="https://www.visit-tochigi.com/plan-your-trip/things-to-do/1875/"
+                target="_blank"
+                class="text-blue-600 hover:underline"
+                >鬼怒楯岩大吊橋</a
+              >散策。
+            </div>
+          </div>
+        </div>
+
+        <!-- 3日目 -->
+        <div
+          class="schedule-card p-6 mb-8 rounded-lg border-2 border-accent/20 bg-white shadow-lg"
+        >
+          <h3
+            class="text-2xl font-extrabold text-accent mb-4 flex items-center"
+          >
+            <span class="mr-3 text-3xl">3日目</span
+            ><span class="text-xl">（10/30・木）| 日光東照宮と宇都宮餃子</span>
+          </h3>
+          <div class="space-y-4 text-gray-700">
+            <div class="time-badge p-3 rounded-md">
+              <span class="font-semibold text-gray-900 block md:inline"
+                >07:00</span
+              >
+              ホテル出発→日光市街へ（約20分）。
+            </div>
+            <div class="time-badge p-3 rounded-md">
+              <span class="font-semibold text-gray-900 block md:inline"
+                >09:00</span
+              >
+              <a
+                href="https://www.toshogu.jp/"
+                target="_blank"
+                class="text-blue-600 hover:underline"
+                >【日光東照宮】</a
+              >参拝（開門直後）。陽明門・眠り猫などを見学。（拝観料1,600円）
+            </div>
+            <div class="time-badge p-3 rounded-md">
+              <span class="font-semibold text-gray-900 block md:inline"
+                >12:00頃</span
+              >
+              日光→宇都宮へ移動（約40分 / 30km）。宇都宮駅周辺で餃子を食べる。
+            </div>
+            <div class="time-badge p-3 rounded-md">
+              <span class="font-semibold text-gray-900 block md:inline"
+                >16:00</span
+              >
+              宇都宮発→東北道/首都高経由で東京・中野へ（約2.5h / 150km）。
+            </div>
+            <div class="time-badge p-3 rounded-md">
+              <span class="font-semibold text-gray-900 block md:inline"
+                >20:00まで</span
+              >
+              新宿にてレンタカー返却。
+            </div>
+          </div>
+        </div>
+
+        <!-- 観光スポット詳細 -->
+        <div class="bg-slate-50 text-[13px] leading-relaxed">
+          <!-- ヒーロー / 見出し -->
+          <section class="max-w-6xl mx-auto px-4 py-8">
+            <h2
+              class="text-2xl font-bold text-slate-800 flex flex-wrap items-baseline gap-2"
+            >
+              <span>栃木のエリア別ガイド</span>
+              <span
+                class="text-xs font-medium text-white bg-slate-800 rounded-full px-2 py-[2px]"
+                >那須 / 塩原 / 鬼怒川 / 日光 / 宇都宮</span
+              >
+            </h2>
+            <p class="text-[13px] text-slate-600 mt-2 max-w-3xl">
+              同じ栃木でも、温泉・火山・世界遺産・SL・餃子までぜんぶキャラが違う。目的別にエリアを選んで、その中で行きたいスポットをチェックできるように整理しました。
+            </p>
+          </section>
+
+          <!-- グリッド: 各エリアはカード＋中にスポットカード群 -->
+          <!-- ポイント: sectionごとに背景を分けると視覚的に「地域のかたまり」がわかりやすい -->
+
+          <!-- 那須 -->
+          <section class="border-t border-slate-200 bg-white/70">
+            <div class="max-w-6xl mx-auto px-4 py-6">
+              <!-- エリアヘッダー -->
+              <div
+                class="flex flex-col gap-2 mb-4 sm:flex-row sm:items-end sm:justify-between"
+              >
+                <div>
+                  <h3
+                    class="text-xl font-bold text-slate-800 flex items-center gap-2"
+                  >
+                    <span
+                      class="text-[15px] inline-flex items-center gap-1 px-2 py-[2px] rounded-full bg-green-100 text-green-700 border border-green-200"
+                      >那須</span
+                    >
+                    <span class="leading-tight"
+                      >高原リゾート＆動物とふれあい</span
+                    >
+                  </h3>
+                  <p class="text-[12px] text-slate-500 mt-1">
+                    那須高原・茶臼岳エリア。ロープウェイで火山の稜線、牧場スイーツ、アウトドア、ファミリー向け施設が集中。
+                  </p>
+                </div>
+                <div class="text-[11px] text-slate-400 flex flex-wrap gap-2">
+                  <span
+                    class="px-2 py-[2px] rounded-full bg-white border border-slate-200 text-slate-600"
+                    >🚗 東北道 那須IC</span
+                  >
+                  <span
+                    class="px-2 py-[2px] rounded-full bg-white border border-slate-200 text-slate-600"
+                    >家族旅行◎</span
+                  >
+                </div>
+              </div>
+
+              <!-- スポット一覧 -->
+              <div class="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+                <!-- 那須ロープウェイ -->
+                <div class="p-4 border rounded-lg shadow-md bg-white">
+                  <h4 class="font-bold text-lg text-accent">
+                    🚠 那須ロープウェイ（茶臼岳）
+                  </h4>
+                  <p class="text-sm text-gray-600 mt-1">
+                    茶臼岳中腹へ。関東最大級のゴンドラで大パノラマ。
+                  </p>
+                  <ul class="text-xs mt-2 space-y-1">
+                    <li>営業時間: 8:30～16:30（下り最終16:20）</li>
+                    <li>料金: 往復 1,800円</li>
+                    <li>
+                      <a
+                        href="https://www.nasu-ropeway.jp/"
+                        target="_blank"
+                        class="text-blue-600 hover:underline"
+                        >公式サイト</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- 那須：つつじ吊橋 -->
+                <div class="p-4 border rounded-lg shadow-md bg-white">
+                  <h4
+                    class="font-bold text-lg text-accent flex items-start gap-2"
+                  >
+                    <span>🌸</span>
+                    <span>つつじ吊橋（那須）</span>
+                  </h4>
+                  <p class="text-sm text-gray-600 mt-1">
+                    那須高原の乙女の滝近くにある全長130mの吊橋。新緑・紅葉・つつじの季節が特に美しい。
+                  </p>
+                  <ul class="text-xs mt-2 space-y-1">
+                    <li>通行無料</li>
+                    <li>駐車場: あり（無料 約20台）</li>
+                    <li>
+                      <a
+                        href="https://www.nasu-ropeway.jp/enjoy/11"
+                        target="_blank"
+                        class="text-blue-600 hover:underline"
+                        >那須町観光協会</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- 那須：鹿の湯 -->
+                <div class="p-4 border rounded-lg shadow-md bg-white">
+                  <h4
+                    class="font-bold text-lg text-accent flex items-start gap-2"
+                  >
+                    <span>♨️</span>
+                    <span>鹿の湯（那須温泉）</span>
+                  </h4>
+                  <p class="text-sm text-gray-600 mt-1">
+                    開湯1300年、白濁硫黄泉の名湯。温度別の湯船で地元民にも愛される共同浴場。
+                  </p>
+                  <ul class="text-xs mt-2 space-y-1">
+                    <li>営業時間: 8:00～18:00（最終受付17:30）</li>
+                    <li>入浴料: 大人500円</li>
+                    <li>
+                      <a
+                        href="https://www.shikanoyu.jp/"
+                        target="_blank"
+                        class="text-blue-600 hover:underline"
+                        >那須温泉観光協会</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- 那須：平成の森 -->
+                <div class="p-4 border rounded-lg shadow-md bg-white">
+                  <h4
+                    class="font-bold text-lg text-accent flex items-start gap-2"
+                  >
+                    <span>🌲</span>
+                    <span>那須平成の森</span>
+                  </h4>
+                  <p class="text-sm text-gray-600 mt-1">
+                    那須御用邸用地の一部を一般公開した自然林。ガイド付き散策や野鳥観察ができる静寂の森。
+                  </p>
+                  <ul class="text-xs mt-2 space-y-1">
+                    <li>開館時間: 9:00～16:30（季節変動）</li>
+                    <li>入場無料</li>
+                    <li>
+                      <a
+                        href="https://nasuheisei-f.jp/"
+                        target="_blank"
+                        class="text-blue-600 hover:underline"
+                        >公式サイト</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- チーズガーデン那須本店 -->
+                <div class="p-4 border rounded-lg shadow-md bg-white">
+                  <h4 class="font-bold text-lg text-accent">
+                    🧀 チーズガーデン那須本店
+                  </h4>
+                  <p class="text-sm text-gray-600 mt-1">
+                    「御用邸チーズケーキ」等洋菓子の本店。カフェ併設。
+                  </p>
+                  <ul class="text-xs mt-2 space-y-1">
+                    <li>営業時間: 9:00～18:00（LO 17:45）</li>
+                    <li>料金: カフェメニューによる</li>
+                    <li>
+                      <a
+                        href="https://cheesegarden.jp/"
+                        target="_blank"
+                        class="text-blue-600 hover:underline"
+                        >公式サイト</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- 那須ガーデンアウトレット -->
+                <div class="p-4 border rounded-lg shadow-md bg-white">
+                  <h4
+                    class="font-bold text-lg text-accent flex items-start gap-2"
+                  >
+                    <span>🛍️</span>
+                    <span>那須ガーデンアウトレット</span>
+                  </h4>
+                  <p class="text-sm text-gray-600 mt-1">
+                    リゾート型アウトレットモール。ファッション、アウトドアブランド、地元グルメ・牧場系スイーツもまとまって楽しめる。「旅の最後の寄り道」に使いやすい立地。
+                  </p>
+                  <ul class="text-xs mt-2 space-y-1">
+                    <li>営業時間: 10:00～19:00（季節で変動あり）</li>
+                    <li>アクセス: 那須塩原駅から無料シャトルバスあり</li>
+                    <li>
+                      <a
+                        href="https://www.nasu-gardenoutlet.com/"
+                        target="_blank"
+                        class="text-blue-600 hover:underline"
+                        >公式サイト</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 塩原 -->
+          <section class="border-t border-slate-200 bg-white">
+            <div class="max-w-6xl mx-auto px-4 py-6">
+              <div
+                class="flex flex-col gap-2 mb-4 sm:flex-row sm:items-end sm:justify-between"
+              >
+                <div>
+                  <h3
+                    class="text-xl font-bold text-slate-800 flex items-center gap-2"
+                  >
+                    <span
+                      class="text-[15px] inline-flex items-center gap-1 px-2 py-[2px] rounded-full bg-amber-100 text-amber-700 border border-amber-200"
+                      >塩原</span
+                    >
+                    <span class="leading-tight">渓谷温泉郷と吊り橋ビュー</span>
+                  </h3>
+                  <p class="text-[12px] text-slate-500 mt-1">
+                    那須塩原市・塩原温泉～板室温泉エリア。渓流沿いの湯治場ムードと、紅葉の吊り橋が名物。
+                  </p>
+                </div>
+                <div class="text-[11px] text-slate-400 flex flex-wrap gap-2">
+                  <span
+                    class="px-2 py-[2px] rounded-full bg-white border border-slate-200 text-slate-600"
+                    >♨ 静かな温泉街</span
+                  >
+                  <span
+                    class="px-2 py-[2px] rounded-full bg-white border border-slate-200 text-slate-600"
+                    >🚗 東北道・西那須野塩原IC</span
+                  >
+                </div>
+              </div>
+              <div class="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+                <!-- 塩原温泉郷（那須塩原） -->
+                <div class="p-4 border rounded-lg shadow-md bg-white">
+                  <h4
+                    class="font-bold text-lg text-accent flex items-start gap-2"
+                  >
+                    <span>♨️</span>
+                    <span>塩原温泉郷</span>
+                  </h4>
+                  <p class="text-sm text-gray-600 mt-1">
+                    渓谷沿いに30以上の源泉が点在する歴史ある温泉地。川沿い露天やレトロな共同浴場など「鄙びた秘湯感」が魅力。紅葉の名所としても有名。
+                  </p>
+                  <ul class="text-xs mt-2 space-y-1">
+                    <li>泉質: 含硫黄泉・塩化物泉など多彩</li>
+                    <li>日帰り入浴可の宿が多数</li>
+                    <li>アクセス: 那須塩原駅からバス約40～60分</li>
+                    <li>
+                      <a
+                        href="https://www.siobara.or.jp/"
+                        target="_blank"
+                        class="text-blue-600 hover:underline"
+                        >塩原温泉観光協会</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- もみじ谷大吊橋 -->
+                <div class="p-4 border rounded-lg shadow-md bg-white">
+                  <h4
+                    class="font-bold text-lg text-accent flex items-start gap-2"
+                  >
+                    <span>🌉</span>
+                    <span>もみじ谷大吊橋</span>
+                  </h4>
+                  <p class="text-sm text-gray-600 mt-1">
+                    全長320mの歩行者専用吊り橋。塩原ダム湖と渓谷、秋の紅葉の眺めが超フォトジェニック。
+                  </p>
+                  <ul class="text-xs mt-2 space-y-1">
+                    <li>料金: 大人300円程度 / 小中学生200円程度</li>
+                    <li>所要目安: 20～30分（散策含む）</li>
+                    <li>
+                      <a
+                        href="http://www.takahara-shinrin.or.jp/mori-no-eki/"
+                        target="_blank"
+                        class="text-blue-600 hover:underline"
+                        >公式観光サイト</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- 塩原：紅の吊橋 -->
+                <div class="p-4 border rounded-lg shadow-md bg-white">
+                  <h4
+                    class="font-bold text-lg text-accent flex items-start gap-2"
+                  >
+                    <span>🍁</span>
+                    <span>紅の吊橋</span>
+                  </h4>
+                  <p class="text-sm text-gray-600 mt-1">
+                    塩原温泉の紅葉名所。箒川にかかる赤い吊橋で、秋には名前の通り紅葉が映える絶景スポット。
+                  </p>
+                  <ul class="text-xs mt-2 space-y-1">
+                    <li>通行無料</li>
+                    <li>ライトアップ: 紅葉期に実施</li>
+                    <li>
+                      <a
+                        href="https://www.tochigiji.or.jp/spot/s57711"
+                        target="_blank"
+                        class="text-blue-600 hover:underline"
+                        >塩原温泉観光協会</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- 塩原：日塩もみじライン -->
+                <div class="p-4 border rounded-lg shadow-md bg-white">
+                  <h4
+                    class="font-bold text-lg text-accent flex items-start gap-2"
+                  >
+                    <span>🚗</span>
+                    <span>日塩もみじライン</span>
+                  </h4>
+                  <p class="text-sm text-gray-600 mt-1">
+                    塩原温泉と鬼怒川温泉を結ぶ有料道路（全長約28km）。秋の紅葉トンネルドライブは栃木屈指の絶景。
+                  </p>
+                  <ul class="text-xs mt-2 space-y-1">
+                    <li>通行料: 普通車610円</li>
+                    <li>紅葉見頃: 10月中旬〜11月上旬</li>
+                    <li>
+                      <a
+                        href="https://www.tochigiji.or.jp/spot/s11759"
+                        target="_blank"
+                        class="text-blue-600 hover:underline"
+                        >日光旅ナビ</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 鬼怒川 -->
+          <section class="border-t border-slate-200 bg-white/70">
+            <div class="max-w-6xl mx-auto px-4 py-6">
+              <div
+                class="flex flex-col gap-2 mb-4 sm:flex-row sm:items-end sm:justify-between"
+              >
+                <div>
+                  <h3
+                    class="text-xl font-bold text-slate-800 flex items-center gap-2"
+                  >
+                    <span
+                      class="text-[15px] inline-flex items-center gap-1 px-2 py-[2px] rounded-full bg-orange-100 text-orange-700 border border-orange-200"
+                      >鬼怒川</span
+                    >
+                    <span class="leading-tight"
+                      >渓谷の温泉リゾート＆アクティビティ</span
+                    >
+                  </h3>
+                  <p class="text-[12px] text-slate-500 mt-1">
+                    鬼怒川・川治エリア。大型ホテルの温泉街、渓谷くだり、本物SL、江戸の町テーマパークまで全部ここに集中。
+                  </p>
+                </div>
+                <div class="text-[11px] text-slate-400 flex flex-wrap gap-2">
+                  <span
+                    class="px-2 py-[2px] rounded-full bg-white border border-slate-200 text-slate-600"
+                    >🚃 東武特急で1本</span
+                  >
+                  <span
+                    class="px-2 py-[2px] rounded-full bg-white border border-slate-200 text-slate-600"
+                    >ファミリー / 三世代◎</span
+                  >
+                </div>
+              </div>
+              <div class="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+                <!-- 鬼怒川：龍王峡 -->
+                <div class="p-4 border rounded-lg shadow-md bg-white">
+                  <h4
+                    class="font-bold text-lg text-accent flex items-start gap-2"
+                  >
+                    <span>🐉</span>
+                    <span>龍王峡</span>
+                  </h4>
+                  <p class="text-sm text-gray-600 mt-1">
+                    鬼怒川温泉と川治温泉の間にある約3kmの渓谷。奇岩とエメラルドグリーンの水が織りなす絶景。
+                  </p>
+                  <ul class="text-xs mt-2 space-y-1">
+                    <li>散策自由（遊歩道整備あり）</li>
+                    <li>龍王峡駅すぐ</li>
+                    <li>
+                      <a
+                        href="https://www.nikko-kankou.org/spot/33/"
+                        target="_blank"
+                        class="text-blue-600 hover:underline"
+                        >日光旅ナビ</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- 鬼怒楯岩大吊橋 -->
+                <div class="p-4 border rounded-lg shadow-md bg-white">
+                  <h4
+                    class="font-bold text-lg text-accent flex items-start gap-2"
+                  >
+                    <span>🌉</span>
+                    <span>鬼怒楯岩大吊橋（きぬたていわおおつりばし）</span>
+                  </h4>
+                  <p class="text-sm text-gray-600 mt-1">
+                    鬼怒川温泉街と絶壁の楯岩を結ぶ歩行者専用の吊り橋。渓谷の上を渡るスリルと、下を流れるエメラルドグリーンの鬼怒川の眺めが人気。
+                  </p>
+                  <ul class="text-xs mt-2 space-y-1">
+                    <li>通行料: 無料</li>
+                    <li>アクセス: 東武鬼怒川温泉駅から徒歩約10分</li>
+                    <li>駐車場: あり（約26台）</li>
+                    <li>
+                      <a
+                        href="https://www.nikko-kankou.org/spot/41"
+                        target="_blank"
+                        class="text-blue-600 hover:underline"
+                        >日光観光サイト</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- 鬼怒川ライン下り -->
+                <div class="p-4 border rounded-lg shadow-md bg-white">
+                  <h4
+                    class="font-bold text-lg text-accent flex items-start gap-2"
+                  >
+                    <span>🏞️</span>
+                    <span>鬼怒川ライン下り</span>
+                  </h4>
+                  <p class="text-sm text-gray-600 mt-1">
+                    船頭さんの手漕ぎ舟で渓谷をくだるスリル体験。ダイナミックな岩壁と四季の眺めが近い！
+                  </p>
+                  <ul class="text-xs mt-2 space-y-1">
+                    <li>運行: 9:00～15:45の間で約30～40分おき出船</li>
+                    <li>所要時間: 乗船約30～40分＋バスで戻り約30分</li>
+                    <li>料金: 大人3,500円 / 小人2,400円（目安）</li>
+                    <li>
+                      <a
+                        href="https://linekudari.com/"
+                        target="_blank"
+                        class="text-blue-600 hover:underline"
+                        >公式サイト</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- 東武ワールドスクウェア -->
+                <div class="p-4 border rounded-lg shadow-md bg-white">
+                  <h4
+                    class="font-bold text-lg text-accent flex items-start gap-2"
+                  >
+                    <span>🌍</span>
+                    <span>東武ワールドスクウェア</span>
+                  </h4>
+                  <p class="text-sm text-gray-600 mt-1">
+                    世界の有名建築や世界遺産（ピラミッド、自由の女神、スカイツリーなど）を1/25スケールで再現したテーマパーク。写真映え抜群。
+                  </p>
+                  <ul class="text-xs mt-2 space-y-1">
+                    <li>営業時間: 9:00～16:00頃（季節変動あり）</li>
+                    <li>入園料: 大人2,800円前後 / 子ども1,400円前後</li>
+                    <li>場所: 鬼怒川温泉エリア</li>
+                    <li>
+                      <a
+                        href="https://www.tobuws.co.jp/"
+                        target="_blank"
+                        class="text-blue-600 hover:underline"
+                        >公式サイト</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- SL大樹（東武鉄道） -->
+                <div class="p-4 border rounded-lg shadow-md bg-white">
+                  <h4
+                    class="font-bold text-lg text-accent flex items-start gap-2"
+                  >
+                    <span>🚂</span>
+                    <span>SL大樹（たいじゅ）</span>
+                  </h4>
+                  <p class="text-sm text-gray-600 mt-1">
+                    本物の蒸気機関車が東武鉄道の下今市～鬼怒川温泉などを走る人気観光列車。車内はレトロ客車で鉄道ファンも家族連れも大満足。
+                  </p>
+                  <ul class="text-xs mt-2 space-y-1">
+                    <li>運転日: 主に土日・祝日中心（繁忙期は平日も運転）</li>
+                    <li>料金: 乗車券＋SL座席指定券（+大人1,100円前後）</li>
+                    <li>所要: 約35〜40分区間</li>
+                    <li>
+                      <a
+                        href="https://www.tobu.co.jp/sl/"
+                        target="_blank"
+                        class="text-blue-600 hover:underline"
+                        >公式案内（東武鉄道）</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 日光市街（世界遺産エリア） -->
+          <section class="border-t border-slate-200 bg-white">
+            <div class="max-w-6xl mx-auto px-4 py-6">
+              <div
+                class="flex flex-col gap-2 mb-4 sm:flex-row sm:items-end sm:justify-between"
+              >
+                <div>
+                  <h3
+                    class="text-xl font-bold text-slate-800 flex items-center gap-2"
+                  >
+                    <span
+                      class="text-[15px] inline-flex items-center gap-1 px-2 py-[2px] rounded-full bg-yellow-100 text-yellow-700 border border-yellow-200"
+                      >日光市街</span
+                    >
+                    <span class="leading-tight">世界遺産と門前町さんぽ</span>
+                  </h3>
+                  <p class="text-[12px] text-slate-500 mt-1">
+                    東照宮・輪王寺・二荒山神社など「日光の社寺」ゾーン。表参道や神橋、老舗ゆば料理の店もこのエリア。
+                  </p>
+                </div>
+                <div class="text-[11px] text-slate-400 flex flex-wrap gap-2">
+                  <span
+                    class="px-2 py-[2px] rounded-full bg-white border border-slate-200 text-slate-600"
+                    >🚌 東武日光駅からバス10分</span
+                  >
+                  <span
+                    class="px-2 py-[2px] rounded-full bg-white border border-slate-200 text-slate-600"
+                    >歴史・建築好き</span
+                  >
+                </div>
+              </div>
+
+              <div class="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+                <!-- 日光東照宮 -->
+                <div class="p-4 border rounded-lg shadow-md bg-white">
+                  <h4 class="font-bold text-lg text-accent">
+                    ⛩️ 日光東照宮（世界遺産）
+                  </h4>
+                  <p class="text-sm text-gray-600 mt-1">
+                    徳川家康公を祀る。陽明門・眠り猫など豪華絢爛な彫刻。
+                  </p>
+                  <ul class="text-xs mt-2 space-y-1">
+                    <li>拝観時間: 9:00～17:00（10月末）</li>
+                    <li>拝観料: 1,600円</li>
+                    <li>
+                      <a
+                        href="https://japan-trails.com/media/nikko-toshogu-shrine/"
+                        target="_blank"
+                        class="text-blue-600 hover:underline"
+                        >参考情報</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 日光（奥日光 / 湖・滝・湿原） -->
+          <section class="border-t border-slate-200 bg-white/70">
+            <div class="max-w-6xl mx-auto px-4 py-6">
+              <div
+                class="flex flex-col gap-2 mb-4 sm:flex-row sm:items-end sm:justify-between"
+              >
+                <div>
+                  <h3
+                    class="text-xl font-bold text-slate-800 flex items-center gap-2"
+                  >
+                    <span
+                      class="text-[15px] inline-flex items-center gap-1 px-2 py-[2px] rounded-full bg-cyan-100 text-cyan-700 border border-cyan-200"
+                      >日光（奥日光）</span
+                    >
+                    <span class="leading-tight">湖・滝・高原トレッキング</span>
+                  </h3>
+                  <p class="text-[12px] text-slate-500 mt-1">
+                    中禅寺湖〜戦場ヶ原〜湯元温泉エリア。滝と湿原ハイク、紅葉ドライブ、濃い硫黄泉の露天風呂までまとめて楽しめる高原リゾート帯。
+                  </p>
+                </div>
+                <div class="text-[11px] text-slate-400 flex flex-wrap gap-2">
+                  <span
+                    class="px-2 py-[2px] rounded-full bg-white border border-slate-200 text-slate-600"
+                    >標高1,200m〜1,500m帯</span
+                  >
+                  <span
+                    class="px-2 py-[2px] rounded-full bg-white border border-slate-200 text-slate-600"
+                    >紅葉◎</span
+                  >
+                </div>
+              </div>
+
+              <div class="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+                <!-- 明智平ロープウェイ -->
+                <div class="p-4 border rounded-lg shadow-md bg-white">
+                  <h4 class="font-bold text-lg text-accent">
+                    ⛰️ 明智平ロープウェイ
+                  </h4>
+                  <p class="text-sm text-gray-600 mt-1">
+                    日光一の絶景。中禅寺湖、華厳の滝、男体山を一望。
+                  </p>
+                  <ul class="text-xs mt-2 space-y-1">
+                    <li>営業時間: 9:00～15:30</li>
+                    <li>料金: 往復 1,000円</li>
+                    <li>
+                      <a
+                        href="https://www.nikko-kotsu.co.jp/ropeway/"
+                        target="_blank"
+                        class="text-blue-600 hover:underline"
+                        >公式サイト</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- 華厳の滝 -->
+                <div class="p-4 border rounded-lg shadow-md bg-white">
+                  <h4
+                    class="font-bold text-lg text-accent flex items-start gap-2"
+                  >
+                    <span>🌊</span>
+                    <span>華厳の滝</span>
+                  </h4>
+                  <p class="text-sm text-gray-600 mt-1">
+                    高さ97m、日本三大名瀑のひとつ。エレベーターで滝つぼ近くの観瀑台へ降りて大迫力の水しぶき。
+                  </p>
+                  <ul class="text-xs mt-2 space-y-1">
+                    <li>観瀑エレベーター: 大人570円前後</li>
+                    <li>所要目安: 30分～</li>
+                    <li>
+                      <a
+                        href="https://www.nikko-kankou.org/spot/1/"
+                        target="_blank"
+                        class="text-blue-600 hover:underline"
+                        >日光観光サイト</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- 日光：中禅寺湖 -->
+                <div class="p-4 border rounded-lg shadow-md bg-white">
+                  <h4
+                    class="font-bold text-lg text-accent flex items-start gap-2"
+                  >
+                    <span>🌊</span>
+                    <span>中禅寺湖</span>
+                  </h4>
+                  <p class="text-sm text-gray-600 mt-1">
+                    標高1,269mの湖。遊覧船・ボート・紅葉散策などが楽しめる奥日光の中心観光地。
+                  </p>
+                  <ul class="text-xs mt-2 space-y-1">
+                    <li>遊覧船運航: 4月～11月</li>
+                    <li>周囲約25km</li>
+                    <li>
+                      <a
+                        href="https://www.nikko-kankou.org/spot/12/"
+                        target="_blank"
+                        class="text-blue-600 hover:underline"
+                        >日光旅ナビ</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- 中禅寺湖 遊覧船クルーズ -->
+                <div class="p-4 border rounded-lg shadow-md bg-white">
+                  <h4
+                    class="font-bold text-lg text-accent flex items-start gap-2"
+                  >
+                    <span>🚤</span>
+                    <span>中禅寺湖 遊覧船クルーズ</span>
+                  </h4>
+                  <p class="text-sm text-gray-600 mt-1">
+                    標高1,269mの高原湖「中禅寺湖」を周遊。男体山の姿が湖面に映るビューは日光ならでは。紅葉シーズンも人気。
+                  </p>
+                  <ul class="text-xs mt-2 space-y-1">
+                    <li>運航時間: 日中30〜40分間隔（季節変動）</li>
+                    <li>所要: コース約50分</li>
+                    <li>料金: 大人1,500円前後（周遊コース）</li>
+                    <li>
+                      <a
+                        href="https://www.chuzenjiko-cruise.com/"
+                        target="_blank"
+                        class="text-blue-600 hover:underline"
+                        >公式サイト</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- 日光：英国大使館別荘記念公園 -->
+                <div class="p-4 border rounded-lg shadow-md bg-white">
+                  <h4
+                    class="font-bold text-lg text-accent flex items-start gap-2"
+                  >
+                    <span>🇬🇧</span>
+                    <span>英国大使館別荘記念公園</span>
+                  </h4>
+                  <p class="text-sm text-gray-600 mt-1">
+                    中禅寺湖畔に建つ木造の外交官別荘。紅葉と湖を眺めながら紅茶を楽しめるカフェ併設。
+                  </p>
+                  <ul class="text-xs mt-2 space-y-1">
+                    <li>開館時間: 9:00～17:00（季節変動）</li>
+                    <li>入館料: 大人300円</li>
+                    <li>
+                      <a
+                        href="https://www.nikko-nsm.co.jp/british.html"
+                        target="_blank"
+                        class="text-blue-600 hover:underline"
+                        >公式サイト</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- イタリア大使館別荘記念公園 -->
+                <div class="p-4 border rounded-lg shadow-md bg-white">
+                  <h4 class="font-bold text-lg text-accent">
+                    🇮🇹 イタリア大使館別荘記念公園
+                  </h4>
+                  <p class="text-sm text-gray-600 mt-1">
+                    1928年建造の旧別荘。湖畔の自然と歴史を堪能できる。
+                  </p>
+                  <ul class="text-xs mt-2 space-y-1">
+                    <li>料金: 入園無料</li>
+                    <li>特長: 園内カフェ「Caffe Como」あり。</li>
+                    <li>
+                      <a
+                        href="https://www.nikko-nsm.co.jp/italy.html"
+                        target="_blank"
+                        class="text-blue-600 hover:underline"
+                        >公式サイト</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- 日光：半月山展望台 -->
+                <div class="p-4 border rounded-lg shadow-md bg-white">
+                  <h4
+                    class="font-bold text-lg text-accent flex items-start gap-2"
+                  >
+                    <span>🏔️</span>
+                    <span>半月山展望台</span>
+                  </h4>
+                  <p class="text-sm text-gray-600 mt-1">
+                    中禅寺湖と男体山を一望する絶景展望台。秋は紅葉と湖のコントラストが見事。
+                  </p>
+                  <ul class="text-xs mt-2 space-y-1">
+                    <li>駐車場から徒歩約15分</li>
+                    <li>日光いろは坂経由（冬期閉鎖あり）</li>
+                    <li>
+                      <a
+                        href="https://www.tochigiji.or.jp/spot/s12028"
+                        target="_blank"
+                        class="text-blue-600 hover:underline"
+                        >日光旅ナビ</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- 竜頭ノ滝 -->
+                <div class="p-4 border rounded-lg shadow-md bg-white">
+                  <h4
+                    class="font-bold text-lg text-accent flex items-start gap-2"
+                  >
+                    <span>🐉</span>
+                    <span>竜頭ノ滝（りゅうずのたき）</span>
+                  </h4>
+                  <p class="text-sm text-gray-600 mt-1">
+                    溶岩の岩肌を分かれて落ちる独特な滝姿が「龍の頭」に見えると言われる名瀑。紅葉の名所として超有名。
+                  </p>
+                  <ul class="text-xs mt-2 space-y-1">
+                    <li>見学自由 / 無料</li>
+                    <li>滝見台に茶屋あり（お休み処）</li>
+                    <li>アクセス: 戦場ヶ原エリアから車ですぐ</li>
+                    <li>
+                      <a
+                        href="https://www.nikko-kankou.org/spot/6"
+                        target="_blank"
+                        class="text-blue-600 hover:underline"
+                        >日光観光サイト</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- 戦場ヶ原ハイキングコース -->
+                <div class="p-4 border rounded-lg shadow-md bg-white">
+                  <h4
+                    class="font-bold text-lg text-accent flex items-start gap-2"
+                  >
+                    <span>🌿</span>
+                    <span>戦場ヶ原ハイキングコース</span>
+                  </h4>
+                  <p class="text-sm text-gray-600 mt-1">
+                    標高約1,400mに広がる湿原。木道が整備されていて初心者でも歩きやすい。男体山や湯川の景観が美しい奥日光の定番トレッキング。
+                  </p>
+                  <ul class="text-xs mt-2 space-y-1">
+                    <li>所要時間: 1.5～2時間程度（コース次第）</li>
+                    <li>難易度: 初心者OK / ほぼフラット</li>
+                    <li>料金: 散策自由</li>
+                    <li>
+                      <a
+                        href="https://www.nikko-kankou.org/features/66"
+                        target="_blank"
+                        class="text-blue-600 hover:underline"
+                        >ハイキング情報</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- 湯滝（奥日光） -->
+                <div class="p-4 border rounded-lg shadow-md bg-white">
+                  <h4
+                    class="font-bold text-lg text-accent flex items-start gap-2"
+                  >
+                    <span>💦</span>
+                    <span>湯滝（奥日光）</span>
+                  </h4>
+                  <p class="text-sm text-gray-600 mt-1">
+                    湯ノ湖から一気に落ちる落差約70mの迫力ある滝。滝つぼのすぐ横まで近づけて水しぶきが浴びられる。秋は紅葉スポットとして人気。
+                  </p>
+                  <ul class="text-xs mt-2 space-y-1">
+                    <li>見学: 自由（徒歩すぐの観瀑台あり）</li>
+                    <li>
+                      駐車場: 普通車1回500円 ※冬期無料開放あり 積雪時閉鎖あり
+                    </li>
+                    <li>トイレ: 冬期(12月上旬～4月)閉鎖あり</li>
+                    <li>
+                      <a
+                        href="https://www.nikko-kankou.org/spot/115/"
+                        target="_blank"
+                        class="text-blue-600 hover:underline"
+                        >日光観光サイト</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- 日光：瀬戸合峡 -->
+                <div class="p-4 border rounded-lg shadow-md bg-white">
+                  <h4
+                    class="font-bold text-lg text-accent flex items-start gap-2"
+                  >
+                    <span>🏞️</span>
+                    <span>瀬戸合峡（せとあいきょう）</span>
+                  </h4>
+                  <p class="text-sm text-gray-600 mt-1">
+                    栗山地区の渓谷美を代表する秘境。高さ100m級の断崖にかかる「渡らっしゃい吊橋」からの眺めが絶景。
+                  </p>
+                  <ul class="text-xs mt-2 space-y-1">
+                    <li>通行無料</li>
+                    <li>冬期閉鎖: 11月下旬〜翌年4月</li>
+                    <li>
+                      <a
+                        href="https://www.tochigiji.or.jp/spot/s10228"
+                        target="_blank"
+                        class="text-blue-600 hover:underline"
+                        >日光旅ナビ</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 宇都宮 -->
+          <section class="border-t border-slate-200 bg-white">
+            <div class="max-w-6xl mx-auto px-4 py-6">
+              <div
+                class="flex flex-col gap-2 mb-4 sm:flex-row sm:items-end sm:justify-between"
+              >
+                <div>
+                  <h3
+                    class="text-xl font-bold text-slate-800 flex items-center gap-2"
+                  >
+                    <span
+                      class="text-[15px] inline-flex items-center gap-1 px-2 py-[2px] rounded-full bg-red-100 text-red-700 border border-red-200"
+                      >宇都宮</span
+                    >
+                    <span class="leading-tight">餃子と夜のまち歩き</span>
+                  </h3>
+                  <p class="text-[12px] text-slate-500 mt-1">
+                    北関東最大のターミナルシティ。宇都宮餃子の食べ歩き、バー文化、ライトアップした大谷石エリアも人気急上昇中。
+                  </p>
+                </div>
+                <div class="text-[11px] text-slate-400 flex flex-wrap gap-2">
+                  <span
+                    class="px-2 py-[2px] rounded-full bg-white border border-slate-200 text-slate-600"
+                    >🚄 東京から新幹線50分台</span
+                  >
+                  <span
+                    class="px-2 py-[2px] rounded-full bg-white border border-slate-200 text-slate-600"
+                    >夜ごはん目的OK</span
+                  >
+                </div>
+              </div>
+
+              <div class="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+                <!-- 大谷資料館（宇都宮郊外） -->
+                <div class="p-4 border rounded-lg shadow-md bg-white">
+                  <h4
+                    class="font-bold text-lg text-accent flex items-start gap-2"
+                  >
+                    <span>⛏️</span>
+                    <span>大谷資料館</span>
+                  </h4>
+                  <p class="text-sm text-gray-600 mt-1">
+                    巨大な地下採石場跡。ライトアップされた大谷石の地下空間はまるで遺跡ホール。
+                  </p>
+                  <ul class="text-xs mt-2 space-y-1">
+                    <li>入館: 大人800円前後</li>
+                    <li>気温: 年間通して約8～10℃</li>
+                    <li>
+                      <a
+                        href="http://www.oya909.co.jp/"
+                        class="text-blue-600 hover:underline"
+                        >公式サイト</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- 宇都宮餃子エリア（餃子通りイメージ） -->
+                <div class="p-4 border rounded-lg shadow-md bg-white">
+                  <h4
+                    class="font-bold text-lg text-accent flex items-start gap-2"
+                  >
+                    <span>🥟</span>
+                    <span>宇都宮餃子めぐり</span>
+                  </h4>
+                  <p class="text-sm text-gray-600 mt-1">
+                    名店の焼き・水・揚げ餃子をハシゴできる餃子タウン。昼から飲める店も多い。
+                  </p>
+                  <ul class="text-xs mt-2 space-y-1">
+                    <li>平均予算: 1軒1,000円前後</li>
+                    <li>人気店は行列あり</li>
+                    <li>
+                      <a
+                        href="https://www.gyozakai.com/"
+                        class="text-blue-600 hover:underline"
+                        >宇都宮餃子会</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- 宇都宮：宇都宮みんみん本店 -->
+                <div class="p-4 border rounded-lg shadow-md bg-white">
+                  <h4
+                    class="font-bold text-lg text-accent flex items-start gap-2"
+                  >
+                    <span>🥟</span>
+                    <span>宇都宮みんみん 本店</span>
+                  </h4>
+                  <p class="text-sm text-gray-600 mt-1">
+                    宇都宮餃子の代名詞的存在。焼・水・揚餃子を3種食べ比べできる老舗人気店。
+                  </p>
+                  <ul class="text-xs mt-2 space-y-1">
+                    <li>営業時間: 11:30～20:00（定休: 火曜）</li>
+                    <li>予算: 1,000円前後</li>
+                    <li>
+                      <a
+                        href="https://www.minmin.co.jp/"
+                        target="_blank"
+                        class="text-blue-600 hover:underline"
+                        >公式サイト</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- 宇都宮：来らっせ 本店 -->
+                <div class="p-4 border rounded-lg shadow-md bg-white">
+                  <h4
+                    class="font-bold text-lg text-accent flex items-start gap-2"
+                  >
+                    <span>🥟</span>
+                    <span>来らっせ 本店</span>
+                  </h4>
+                  <p class="text-sm text-gray-600 mt-1">
+                    宇都宮餃子会加盟店の味が一堂に集まるフードコート型店舗。食べ比べに最適。
+                  </p>
+                  <ul class="text-xs mt-2 space-y-1">
+                    <li>営業時間: 11:00～21:00</li>
+                    <li>定休日: 無休（臨時あり）</li>
+                    <li>
+                      <a
+                        href="https://www.gyozakai.com/kirasse/"
+                        target="_blank"
+                        class="text-blue-600 hover:underline"
+                        >公式サイト</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- 宇都宮：宇都宮餃子館 宇都宮インター店 -->
+                <div class="p-4 border rounded-lg shadow-md bg-white">
+                  <h4
+                    class="font-bold text-lg text-accent flex items-start gap-2"
+                  >
+                    <span>🥟</span>
+                    <span>宇都宮餃子館 宇都宮インター店</span>
+                  </h4>
+                  <p class="text-sm text-gray-600 mt-1">
+                    30種以上の餃子を味わえる大型ロードサイド店。おみやげコーナーや通販も充実。
+                  </p>
+                  <ul class="text-xs mt-2 space-y-1">
+                    <li>営業時間: 10:00～20:00</li>
+                    <li>駐車場あり</li>
+                    <li>
+                      <a
+                        href="https://www.gyozakan.jp/shop/inter/%E5%AE%87%E9%83%BD%E5%AE%AE%E9%A4%83%E5%AD%90%E9%A4%A8-%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E5%BA%97/"
+                        target="_blank"
+                        class="text-blue-600 hover:underline"
+                        >公式サイト</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- 宇都宮：餃子通り -->
+                <div class="p-4 border rounded-lg shadow-md bg-white">
+                  <h4
+                    class="font-bold text-lg text-accent flex items-start gap-2"
+                  >
+                    <span>🥟</span>
+                    <span>餃子通り（宇都宮中心街）</span>
+                  </h4>
+                  <p class="text-sm text-gray-600 mt-1">
+                    宇都宮駅東口の餃子専門店が並ぶストリート。行列の人気店が多く昼は活気たっぷり。
+                  </p>
+                  <ul class="text-xs mt-2 space-y-1">
+                    <li>代表店舗: 正嗣、みんみん、悟空など</li>
+                    <li>アクセス: JR宇都宮駅から徒歩約5分</li>
+                    <li>
+                      <a
+                        href="https://www.utsunomiya-cvb.org/spot/detail_10020.html"
+                        target="_blank"
+                        class="text-blue-600 hover:underline"
+                        >宇都宮観光コンベンション協会</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- 食事スポット・地元グルメ -->
+        <section class="mt-12">
+          <h2
+            class="text-2xl md:text-3xl font-bold text-gray-800 mb-6 section-header"
+          >
+            🥢 地元グルメ＆食事スポット
+          </h2>
+          <div class="space-y-4">
+            <div class="bg-red-50 p-4 rounded-lg border-l-4 border-accent">
+              <h4 class="font-bold text-lg text-accent">那須エリア</h4>
+              <p class="text-sm text-gray-700">
+                那須牛、那須高原野菜、乳製品、蕎麦、芋料理など。
+              </p>
+            </div>
+            <div class="bg-red-50 p-4 rounded-lg border-l-4 border-accent">
+              <h4 class="font-bold text-lg text-accent">日光エリア</h4>
+              <p class="text-sm text-gray-700">
+                ゆば（湯波）料理、湯葉蕎麦、かき氷。
+              </p>
+            </div>
+            <div class="bg-red-50 p-4 rounded-lg border-l-4 border-accent">
+              <h4 class="font-bold text-lg text-accent">宇都宮（3日目昼食）</h4>
+              <p class="text-sm text-gray-700 font-bold">宇都宮餃子を堪能！</p>
+              <p class="text-xs text-gray-600 mt-1">
+                みんみん（本店）は行列覚悟の老舗。餃子専門ビル来らっせでの食べ比べも便利。焼き・水・揚げをぜひシェアして。
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 交通・ルートガイド & 持ち物/注意点 -->
+        <div class="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <!-- 交通・ルートガイド -->
+          <section>
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 section-header">
+              🗺️ 交通・ルートガイド（概要）
+            </h2>
+            <ul class="space-y-3 text-gray-700">
+              <li class="p-3 bg-white border rounded-lg shadow-sm">
+                <span class="font-bold text-accent">1日目:</span>
+                羽田→那須（東北道 約2.5h）
+              </li>
+              <li class="p-3 bg-white border rounded-lg shadow-sm">
+                <span class="font-bold text-accent">2日目:</span>
+                那須→日塩もみじライン→鬼怒川→中禅寺湖→鬼怒川（紅葉の山岳ルート）
+              </li>
+              <li class="p-3 bg-white border rounded-lg shadow-sm">
+                <span class="font-bold text-accent">3日目:</span>
+                鬼怒川→東照宮→宇都宮→新宿（東北道/首都高 約2.5h）
+              </li>
+              <li class="p-3 bg-white border rounded-lg shadow-sm text-sm">
+                <span class="font-bold">重要:</span>
+                全てのドライブルートは出発前にGoogleマップで再確認してください。
+              </li>
+            </ul>
+          </section>
+
+          <!-- 持ち物・注意点 -->
+          <section>
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 section-header">
+              ✅ 旅の準備と注意点
+            </h2>
+
+            <h4 class="font-bold text-lg text-accent">
+              🧥 服装・持ち物（10月下旬の気候）
+            </h4>
+            <p class="text-sm text-gray-700 mt-1">
+              日中15～20℃、朝晩10℃前後。標高差があるため防寒対策が重要です。
+            </p>
+            <ul
+              class="list-disc list-inside ml-4 text-sm text-gray-700 mt-2 space-y-1"
+            >
+              <li>
+                <b>服装: </b>長袖 + 薄手セーター/フリース +
+                防風ジャケット（必須）。重ね着推奨。
+              </li>
+              <li>
+                <b>靴:</b> 歩きやすい靴（ハイキング/トレッキングシューズ）必須。
+              </li>
+              <li>
+                <b>必需品:</b>
+                モバイルバッテリー、ETCカード、現金（山岳道路の有料施設に備えて）。
+              </li>
+            </ul>
+
+            <h4 class="font-bold text-lg text-accent mt-4">
+              🛑 旅のコツ・安全対策
+            </h4>
+            <ul
+              class="list-disc list-inside ml-4 text-sm text-gray-700 mt-2 space-y-1"
+            >
+              <li>
+                <b>渋滞対策</b>:
+                紅葉シーズンは道路が大混雑します。6〜7時出発の早朝移動で渋滞ピークを避けてください。
+              </li>
+              <li>
+                <b>混雑</b>:
+                明智平・東照宮は行列ができやすいです。開門直後を狙いましょう。
+              </li>
+              <li>
+                <b>安全</b>:
+                山道や吊橋は足元に注意。天候変化に備え、最新の天気情報を確認してください。
+              </li>
+            </ul>
+          </section>
+        </div>
+      </main>
+
+      <!-- フッター -->
+      <footer class="color-accent/80 text-white p-4 text-center mt-8">
+        <p class="text-sm font-medium">
+          ✨
+          素敵な秋のドライブ旅行になりますように！安全運転で楽しんでください。✨
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
